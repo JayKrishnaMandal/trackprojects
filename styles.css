@@ -10,23 +10,40 @@ body {
     color: #fff;
     padding: 20px;
     text-align: center;
-    margin-bottom: 10px;
 }
 
 .header h1 {
     margin: 0;
- 
+}
+
+.currently-working {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.currently-working h2 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.currently-working p {
+    margin-bottom: 0;
 }
 
 .timeline {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 90%;
+    margin: 20px auto;
     position: relative;
 }
 
 .timeline-item {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     margin-bottom: 30px;
 }
@@ -38,6 +55,7 @@ body {
     border: 2px solid #007bff;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
 }
 
 .timeline-content h3 {
@@ -50,10 +68,8 @@ body {
 }
 
 .timeline-date {
-    position: absolute;
-    top: 50%;
-    right: -85px;
-    transform: translateY(-50%);
+    position: relative;
+    flex: 0 0 auto;
     padding: 10px;
     background-color: #007bff;
     color: #fff;
@@ -63,6 +79,8 @@ body {
 
 .sub-timeline {
     margin-top: 20px;
+    flex: 1;
+    width: 100%;
 }
 
 .sub-timeline-item {
@@ -91,22 +109,14 @@ body {
 .timeline-item.current .timeline-date {
     background-color: #28a745;
 }
-/* Existing CSS styles */
 
-.currently-working {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.currently-working h2 {
-    margin-top: 0;
-    color: #007bff;
-}
-
-.currently-working p {
-    margin-bottom: 0;
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+    }
+    
+    .timeline-content {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
