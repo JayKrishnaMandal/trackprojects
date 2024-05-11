@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    margin: 0;
+ 
+}
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline-item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.timeline-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.timeline-content p {
+    margin-bottom: 0;
+}
+
+.timeline-date {
+    position: absolute;
+    top: 50%;
+    right: -85px;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.sub-timeline {
+    margin-top: 20px;
+}
+
+.sub-timeline-item {
+    display: flex;
+    margin-top: 10px;
+}
+
+.sub-timeline-content {
+    flex: 1;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sub-timeline-content h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #007bff;
+}
+
+.timeline-item.current .timeline-content {
+    border-color: #28a745;
+}
+
+.timeline-item.current .timeline-date {
+    background-color: #28a745;
+}
+/* Existing CSS styles */
+
+.currently-working {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.currently-working h2 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.currently-working p {
+    margin-bottom: 0;
+}
